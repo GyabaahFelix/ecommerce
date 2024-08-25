@@ -4,8 +4,9 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 90vh;
+    min-height: 90vh; /* Changed from height to min-height */
     padding: 2rem;
+    margin-bottom: 50px; /* Ensure there's space between the section and the footer */
 }
 
 .relatedproducts h1 {
@@ -68,10 +69,6 @@
     .relatedproducts h1 {
         font-size: 30px;
     }
-    .footer {
-       display: none;
-    }
-    
 
     .relatedproducts hr {
         width: 100px;
