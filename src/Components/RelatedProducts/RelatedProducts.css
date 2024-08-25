@@ -1,23 +1,100 @@
-.relatedproducts{
+/* RelatedProducts.module.css */
+.relatedproducts {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     height: 90vh;
+    padding: 2rem;
 }
-.relatedproducts h1{
+
+.relatedproducts h1 {
     color: #171717;
     font-size: 50px;
     font-weight: 600;
+    text-align: center;
 }
-.relatedproducts hr{
+
+.relatedproducts hr {
     width: 200px;
     height: 6px;
     border-radius: 10px;
     background: #252525;
+    margin: 0 auto;
 }
-.relatedproducts-item{
+
+.relatedproducts-item {
     margin-top: 50px;
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Responsive Styling */
+
+/* For screens with a max-width of 1280px */
+@media (max-width: 1280px) {
+    .relatedproducts h1 {
+        font-size: 40px;
+    }
+
+    .relatedproducts hr {
+        width: 150px;
+    }
+
+    .relatedproducts-item {
+        gap: 20px;
+    }
+}
+
+/* For screens with a max-width of 1024px */
+@media (max-width: 1024px) {
+    .relatedproducts h1 {
+        font-size: 35px;
+    }
+
+    .relatedproducts hr {
+        width: 120px;
+    }
+
+    .relatedproducts-item {
+        gap: 15px;
+    }
+}
+
+/* For screens with a max-width of 800px */
+@media (max-width: 800px) {
+    .relatedproducts h1 {
+        font-size: 30px;
+    }
+    .footer {
+       display: none;
+    }
+    
+
+    .relatedproducts hr {
+        width: 100px;
+    }
+
+    .relatedproducts-item {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* For screens with a max-width of 500px */
+@media (max-width: 500px) {
+    .relatedproducts h1 {
+        font-size: 25px;
+    }
+
+    .relatedproducts hr {
+        width: 80px;
+    }
+
+    .relatedproducts-item {
+        gap: 5px;
+    }
 }

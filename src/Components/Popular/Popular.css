@@ -7,32 +7,32 @@
     padding: 40px 20px;
     background: linear-gradient(180deg, #f7f9fc 0%, #ffffff 100%);
     margin-top: 150px; /* Adjusted top margin to move it more down */
-}
-
-.popular h1 {
+  }
+  
+  .popular h1 {
     color: #333333;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 10px;
-}
-
-.popular hr {
+  }
+  
+  .popular hr {
     width: 100px;
     height: 4px;
     border-radius: 5px;
     background: #ff6b6b;
     margin: 0;
-}
-
-.popular-item {
+  }
+  
+  .popular-item {
     margin-top: 40px;
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.popular-item .card {
+  }
+  
+  .popular-item .card {
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -40,28 +40,28 @@
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.popular-item .card:hover {
+  }
+  
+  .popular-item .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.popular-item .card h2 {
+  }
+  
+  .popular-item .card h2 {
     color: #333333;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
-}
-
-.popular-item .card p {
+  }
+  
+  .popular-item .card p {
     color: #666666;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 20px;
-}
-
-.popular-item .card button {
+  }
+  
+  .popular-item .card button {
     width: 100%;
     height: 40px;
     border-radius: 20px;
@@ -72,8 +72,115 @@
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s ease;
-}
-
-.popular-item .card button:hover {
+  }
+  
+  .popular-item .card button:hover {
     background: #ff4b4b;
-}
+  }
+  
+  /* Responsive Styling */
+  
+  /* For screens with a max-width of 1280px */
+  @media (max-width: 1280px) {
+    .popular h1 {
+      font-size: 42px;
+    }
+  
+    .popular-item .card {
+      width: 280px;
+    }
+  }
+  
+  /* For screens with a max-width of 1024px */
+  @media (max-width: 1024px) {
+    .popular h1 {
+      font-size: 36px;
+    }
+  
+    .popular-item {
+      gap: 30px;
+    }
+  
+    .popular-item .card {
+      width: 250px;
+      padding: 15px;
+    }
+  
+    .popular-item .card h2 {
+      font-size: 22px;
+    }
+  
+    .popular-item .card p {
+      font-size: 14px;
+    }
+  
+    .popular-item .card button {
+      height: 38px;
+      font-size: 14px;
+    }
+  }
+  
+  /* For screens with a max-width of 800px */
+  @media (max-width: 800px) {
+    .popular {
+      padding: 30px 15px;
+    }
+  
+    .popular h1 {
+      font-size: 32px;
+    }
+  
+    .popular-item {
+      gap: 20px;
+    }
+  
+    .popular-item .card {
+      width: 220px;
+      padding: 10px;
+    }
+  
+    .popular-item .card h2 {
+      font-size: 20px;
+    }
+  
+    .popular-item .card p {
+      font-size: 12px;
+    }
+  
+    .popular-item .card button {
+      height: 36px;
+      font-size: 13px;
+    }
+  }
+  
+  /* For screens with a max-width of 500px */
+  @media (max-width: 500px) {
+    .popular {
+      padding: 20px 10px;
+      margin-top: 100px; /* Reduced margin-top to fit smaller screens */
+    }
+  
+    .popular h1 {
+      font-size: 28px;
+    }
+  
+    .popular-item .card {
+      width: 100%;
+      max-width: 300px;
+      padding: 15px;
+    }
+  
+    .popular-item .card h2 {
+      font-size: 18px;
+    }
+  
+    .popular-item .card p {
+      font-size: 12px;
+    }
+  
+    .popular-item .card button {
+      height: 34px;
+      font-size: 12px;
+    }
+  }
+  
